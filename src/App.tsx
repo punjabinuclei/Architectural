@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-      <div>
+      <div className='px-10'>
         <Navbar />
         <HeroSection />
       </div>

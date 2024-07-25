@@ -1,9 +1,26 @@
+import Lottie from 'react-lottie';
+import animationData from '../../assets/Animation - 1721668214534.json';
 
 const Navbar = () => {
+    const defaultOptions = {
+        loop: true,
+        autoplay: true,
+        animationData: animationData,
+        rendererSettings: {
+            preserveAspectRatio: "xMidYMid slice"
+        }
+    };
     return (
         <div>
             <div className="container px-6 py-6 flex justify-around">
-                <div>
+                <div className='flex'>
+                    <div className='py-4'>
+                        <Lottie
+                            options={defaultOptions}
+                            height={40}
+                            width={40}
+                        />
+                    </div>
                     <h1 className="px-6 py-6 font-bold text-xl">ArcCrafted.</h1>
                 </div>
 
