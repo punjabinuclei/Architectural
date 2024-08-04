@@ -1,22 +1,40 @@
-import heroImg from '../../assets/bg2.jpg'
+import heroImg from '../../assets/Hero-img.svg'
 
 const HeroSection = () => {
+
+
     return (
-        <section className="text-gray-600 body-font">
-            <div className="container mx-auto flex px-5 py-14 md:flex-row flex-col items-center">
-                <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-                    <h1 className=" sm:font-bold sm:text-6xl text-4xl mb-4 font-medium text-gray-900">We Help to Build Your Dreams.
-                        {/* <br className="hidden lg:inline-block">readymade gluten */}
-                    </h1>
-                    <p className="mb-8 leading-relaxed">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.</p>
-                    <div className="flex justify-center">
-                        <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
-                        <button className="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Button</button>
+        <section className="text-gray-600 body-font md:px-6">
+            <div className=" container mx-auto flex py-20  md:py-14 md:flex-row flex-col items-center">
+                <div className="md:w-4/6">
+                    <h1 className="text-[2rem] md:text-left md:text-[3.5rem] font-bold tracking-tighter text-center">Transforming Spaces with</h1>
+                    <h1 className="text-center md:text-left text-[3rem] md:text-[5rem] font-bold relative bottom-4 md:bottom-8 tracking-tighter text-[#FD5956] ">Innovative Design.</h1>
+                    <p className="text-center md:text-left md:text-[1.3rem]  relative bottom-4 md:bottom-8 font-light tracking-tighter">Whether you're looking to design a modern home, revitalize an urban space, or create a sustainable office environment, our team of expert architects is here to deliver exceptional results.</p>
+                    <div className="flex justify-center md:justify-start pt-6 md:pt-0">
+                        <button className="bg-[#FD5956] px-4 py-2 md:px-6 md:py-2 rounded-md font-semibold">Explore Our Projects</button>
+                        <button className=" text-[#FD5956] px-4 py-2 md:px-6 md:py-2 font-semibold ml-4">Get in Touch</button>
                     </div>
+
                 </div>
-                <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                <div className="md:w-3/6 hidden md:block">
                     <img className='' src={heroImg} alt="Logo" />
                 </div>
+            </div>
+
+            <div className='md:flex justify-around my-6'>
+                <div className='text-center '>
+                    <h1 className='font-bold text-[#FD5956] text-6xl'>300<span>+</span></h1>
+                    <p className='font-medium text-xl uppercase'>Satisfied Customers</p>
+                </div>
+                <div className='text-center pt-6 md:pt-0'>
+                    <h1 className='font-bold text-[#FD5956] text-6xl'>10<span>+</span></h1>
+                    <p className='font-medium text-xl uppercase'>Years of Experience</p>
+                </div>
+                <div className='text-center pt-6 md:pt-0'>
+                    <h1 className='font-bold text-[#FD5956] text-6xl'>8<span>+</span></h1>
+                    <p className='font-medium text-xl uppercase'>Award Winning Projects</p>
+                </div>
+
             </div>
         </section>
     )

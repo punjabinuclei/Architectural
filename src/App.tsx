@@ -6,9 +6,14 @@ function App() {
 
   return (
     <>
-      <div className='px-10'>
-        <Navbar />
-        <HeroSection />
+      <div>
+        <div className='bg-black py-[10px] w-full '>
+          <p className='text-white  text-center text-[0.5rem]'> MAKE ROOM FOR BETTER LIVING</p>
+        </div>
+        <div className='md:px-16 px-6'>
+          <Navbar />
+          <HeroSection />
+        </div>
       </div>
     </>
   )
