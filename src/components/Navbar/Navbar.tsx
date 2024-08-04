@@ -1,15 +1,6 @@
-import Lottie from 'react-lottie';
-import animationData from '../../assets/Animation - 1721668214534.json';
 
 const Navbar = () => {
-    const defaultOptions = {
-        loop: true,
-        autoplay: true,
-        animationData: animationData,
-        rendererSettings: {
-            preserveAspectRatio: "xMidYMid slice"
-        }
-    };
+
     return (
         <div>
             <div className="container  py-4 flex justify-between">
